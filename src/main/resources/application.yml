@@ -1,0 +1,13 @@
+jwt:
+  secret: mySecretKey
+  expiration: 3600000
+
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080
